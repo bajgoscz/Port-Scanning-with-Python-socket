@@ -10,4 +10,5 @@ without the use of ICMP (ping).
 - Allow users to define their port range
 - ICMP (ping) not used
 
-Usage python scanner.py
+# Usage
+python scanner.py
