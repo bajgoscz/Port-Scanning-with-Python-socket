@@ -1,6 +1,6 @@
 # Port Scanning Using Python Sockets
 
-Network scanning for open ports is the focus of this project, designed as a Python-based port scanning tool through the use of Python’s
+Network scanning for open ports is the focus of this project, designed as a Python-based port scanning tool through the use of Python’s socket library.
 It determines the host reachable on the network by probing a set of preselected TCP ports,
 without the use of ICMP (ping).
 
