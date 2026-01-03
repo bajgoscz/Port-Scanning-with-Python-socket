@@ -28,7 +28,7 @@ def main():
     print("-" * 60)
 
     # Network alma
-    network = input("Taranacak ağ (örn: 192.168.1.0/24): ").strip()
+    network = input("Taranacak ağ (format: 192.168.1.0/24:) ").strip()
     if not network:
         print("[!] Hata: Ağ adresi boş bırakılamaz.")
         sys.exit(1)
@@ -60,10 +60,10 @@ def main():
         open_ports = scan_ports(ip, start_port, end_port)
 
         if open_ports:
-            print(f"[✓] {ip} ERİŞİLEBİLİR")
+            print(f"{ip} ERİŞİLEBİLİR")
             print(f"    Açık portlar: {open_ports}\n")
         else:
-            print(f"[✗] {ip} erişilemedi\n")
+            print(f"{ip} erişilemedi\n")
 
     print("--- Tarama Tamamlandı ---")
 
