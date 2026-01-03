@@ -9,7 +9,7 @@ def scan_ports(ip, start_port, end_port):
     for port in range(start_port, end_port + 1):
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.settimeout(0.5)
+            sock.settimeout(1)
 
             result = sock.connect_ex((ip, port))
             if result == 0:
@@ -63,7 +63,7 @@ def main():
             print(f"{ip} ERİŞİLEBİLİR")
             print(f"    Açık portlar: {open_ports}\n")
         else:
-            print(f"{ip} erişilemedi\n")
+            print(f"{ip} açık port bulunamadı")
 
     print("--- Tarama Tamamlandı ---")
 
