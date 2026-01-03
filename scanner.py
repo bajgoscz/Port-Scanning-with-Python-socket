@@ -41,7 +41,7 @@ def main():
         if start_port < 1 or end_port > 65535 or start_port > end_port:
             raise ValueError
     except ValueError:
-        print("[!] Hata: Geçerli bir port aralığı giriniz (1–65535).")
+        print(" Hata: Geçerli bir port aralığı giriniz (1–65535).")
         sys.exit(1)
 
     # Network doğrulama
